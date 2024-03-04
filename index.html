@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/favicon.png">
+	<title>UniBuddy</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+
+	<script>
+		$(document).ready(function(){
+			$("form").submit(function(){
+				alert("Great Job !");
+			});
+		});
+
+		$(window).on('scroll', function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('black');
+			} else {
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
